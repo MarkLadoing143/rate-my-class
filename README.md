@@ -9,4 +9,4 @@ Developed with C# and XML using Microsoft Visual Studio 2015 and Xamarin Studio,
 Database and Back-End used to store manage users and store reviews, university names, and course information was provided by Tyler Cheyne using Microsoft Azure Mobile Services.
 
 ## Preview Images
-![](https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.15.14.png | width=100)
+<img src="https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.15.14.png" alt="Preview Image 1" width="100">
