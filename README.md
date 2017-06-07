@@ -1,7 +1,7 @@
 # Rate My Class (originally "Rate My Course")
 Additional Information at: https://edbertvoo.com/work/rate-my-class
 
-Originally developed with [Edbert Voo](https://www.linkedin.com/in/edvoo/) and [Tyler Cheyne](https://www.linkedin.com/in/tyler-cheyne-57602b83/) as part of a semester-long programming assignment for COMP 3504 - Programming IV: Software Engineering at Mount Royal University from September to December 2016.
+Originally developed with [Edbert Voo](https://www.linkedin.com/in/edvoo/) and [Tyler Cheyne](https://www.linkedin.com/in/tyler-cheyne-57602b83/) as part of a semester-long programming assignment from September to December 2016 for COMP 3504 - Programming IV: Software Engineering at Mount Royal University.
 
 ## Description
 Developed with C# and XML using Microsoft Visual Studio 2015 and Xamarin Studio, this Android Mobile Application allows users to rate university courses on a five-star scale in regards to difficulty and overall quality as well as provide additional comments, similar to the website [Rate My Professors](http://www.ratemyprofessors.com/). 
