@@ -10,3 +10,6 @@ Database and Back-End used to store manage users and store reviews, university n
 
 ## Preview Images
 <img src="https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.15.14.png" alt="Preview Image 1" width="100">
+<img src="https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.15.33.png" alt="Preview Image 2" width="100">
+<img src="https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.15.57.png" alt="Preview Image 3" width="100">
+<img src="https://github.com/MarkLadoing143/rate-my-class/blob/master/preview-images/2016_12_07_12.16.31.png" alt="Preview Image 4" width="100">
