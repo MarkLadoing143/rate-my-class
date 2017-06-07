@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite">
+  <include
+      android:id="@+id/toolbar"
+      layout="@layout/toolbar" />
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout_ReviewDetails"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="vertical"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout2"
+          android:background="@android:color/holo_blue_light">
+        <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewTitle"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linearLayout4">
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTitle"
+            android:textSize="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/mediumGray"
+            android:textStyle="bold" />
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewDescription"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:minLines="6"
+            android:maxLines="6"
+            android:scrollbars="vertical"
+            android:background="@color/lightGray" />
+        <TextView
+            android:text="Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingTitle"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:textColor="@color/mediumGray"
+            android:textStyle="bold" />
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/reviewLayout1"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:paddingTop="7dp"
+          android:paddingRight="7dp"
+          android:paddingLeft="7dp"
+          android:background="@color/lightGray">
+        <TextView
+            android:text="Difficulty"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RatingBar
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/difficultyRating"
+              style="?android:attr/ratingBarStyleIndicator"
+              android:numStars="5"
+              android:stepSize="1"
+              android:isIndicator="true"
+              android:layout_gravity="right" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/reviewLayout2"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:paddingBottom="7dp"
+          android:paddingRight="7dp"
+          android:paddingLeft="7dp"
+          android:background="@color/lightGray">
+        <TextView
+            android:text="Overall Rating"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <RatingBar
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/reviewRating"
+              style="?android:attr/ratingBarStyleIndicator"
+              android:numStars="5"
+              android:stepSize="1"
+              android:isIndicator="true"
+              android:layout_gravity="right" />
+        </LinearLayout>
+      </LinearLayout>
+      <GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/reviewLayout3"
+          android:columnCount="2"
+          android:rowCount="1"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="5dp"
+          android:paddingBottom="7dp"
+          android:paddingRight="7dp"
+          android:paddingLeft="7dp"
+          android:background="@color/lightGray">
+        <TextView
+            android:text="Recommend Class?"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical" />
+        <TextView
+            android:text="N/A"
+            android:id="@+id/recommendation"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@color/mediumGray"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_margin="3dp" />
+      </GridLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:text="What do you think?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/mediumGray" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_marginLeft="7dp"
+          android:layout_marginRight="7dp">
+        <Button
+            android:text="Like (0)"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/likeButton"
+            android:gravity="center"
+            android:background="@drawable/green_button"
+            style="@style/button_text" />
+        <Button
+            android:text="Dislike (0)"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/dislikeButton"
+            android:gravity="center"
+            android:background="@drawable/red_button"
+            style="@style/button_text" />
+      </LinearLayout>
+    </LinearLayout>
+    <!-- Drawer -->
+    <ListView
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#818181"
+        android:dividerHeight="1dp"
+        android:background="#E3F2FD"
+        android:id="@+id/drawerListView_ReviewDetails" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

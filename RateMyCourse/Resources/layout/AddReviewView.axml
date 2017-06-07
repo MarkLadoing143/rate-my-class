@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite"
+    android:id="@+id/linearLayout3">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout_AddReview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- Main Content -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutDrawerAddReview"
+            android:theme="@style/Theme.AppCompat.Light">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2"
+                android:background="@color/mediumGray">
+                <TextView
+                    android:text="Class Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/className"
+                    android:gravity="center_horizontal"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:text="Add a Review"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewTitle"
+                android:hint="Short Summary / Title"
+                android:singleLine="true" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewDescription"
+                android:hint="Full Review"
+                android:minLines="5"
+                android:maxLines="5"
+                android:scrollbars="vertical" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout6"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+                <TextView
+                    android:text="Difficulty"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView6"
+                    android:gravity="center_vertical" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBarDifficulty"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+                <TextView
+                    android:text="Overall Rating"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:text="Recommend this class?"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4"
+                    android:paddingTop="5dp" />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recommendedSwitch"
+                    android:textOff="NO"
+                    android:textOn="YES"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:text="Submit Review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submitButton"
+                    android:background="@drawable/gray_button"
+                    style="@style/button_text" />
+            </LinearLayout>
+        </LinearLayout>
+    <!-- Drawer -->
+        <ListView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#818181"
+            android:dividerHeight="1dp"
+            android:background="#E3F2FD"
+            android:id="@+id/drawerListView_AddReview" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

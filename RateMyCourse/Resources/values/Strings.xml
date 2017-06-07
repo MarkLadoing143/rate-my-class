@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Rate My Class</string>
+
+	<!-- Drawer Stuff -->
+	<string name="drawer_opened">Select an Item</string>
+	<string name="drawer_closed">Rate My Course</string>
+	
+	<string name="drawer_closed_classSearch">Select a Class</string>
+
+	<string name="drawer_closed_schoolSearch">Select a School</string>
+
+
+
+	<string-array name="drawer_list">
+		<item>Select School</item>
+		<item>Select Class</item>
+		<item>Select Review</item>
+	</string-array>
+
+	
+  <string name="server_client_id">867625769101-6i7vuk14c0m9lb1d2mo616egb60hd3b0.apps.googleusercontent.com</string>
+</resources>
+
+

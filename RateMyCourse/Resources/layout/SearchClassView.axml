@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout_SearchClass"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <!-- Main Content -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray">
+            <SearchView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/searchView1"
+                android:queryHint="Search for Classes"
+                android:text="Search for Classes"
+                android:iconifiedByDefault="false"
+                android:focusable="false" />
+            <TextView
+                android:text="School Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/schoolName"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/gray"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/classListView" />
+        </LinearLayout>
+    <!-- Drawer -->
+    <ListView
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#818181"
+        android:dividerHeight="1dp"
+        android:background="#E3F2FD"
+        android:id="@+id/drawerListView_SearchClass" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
