@@ -1,5 +1,6 @@
 # Rate My Class (originally "Rate My Course")
 Additional Information by Team Developer Edbert Voo at: https://edbertvoo.com/work/rate-my-class
+Original Shared Development Repository at: https://github.com/tchey290/COMP-3504-Team-One-Million-Idea
 
 Originally developed with [Edbert Voo](https://www.linkedin.com/in/edvoo/) and [Tyler Cheyne](https://www.linkedin.com/in/tyler-cheyne-57602b83/) as part of a semester-long programming assignment from September to December 2016 for COMP 3504 - Programming IV: Software Engineering at Mount Royal University.
 
